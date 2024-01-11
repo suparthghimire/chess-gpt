@@ -1,5 +1,11 @@
+import BoardView from "../../components/board/board-view";
+
 const Editor = () => {
-  return <div>Editor</div>;
+  return (
+    <div className="h-full  grid place-items-center">
+      <BoardView />
+    </div>
+  );
 };
 
 export default Editor;
