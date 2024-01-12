@@ -28,12 +28,12 @@ const BoardCell: React.FC<T_Props> = (props) => {
           props.highlightValid && "bg-amber-200"
         )}
       />
-      {props.cellPeice.color && props.cellPeice.type && (
+      {/* {props.cellPeice.color && props.cellPeice.type && (
         <img
           src={`/assets/sprites/${props.cellPeice.color}/${props.cellPeice.type}.svg`}
           className="relative w-[80%] h-[80%] z-2"
         />
-      )}
+      )} */}
       {props.children}
     </button>
   );
