@@ -9,3 +9,9 @@ export const IndicesToPGN = (i: number, j: number): Square => {
 
   return `${file}${rank}` as Square;
 };
+
+export const Convert1DTo2D = (index: number, dim: number): [number, number] => {
+  const i = Math.floor(index / dim);
+  const j = index % dim;
+  return [i, j];
+};
